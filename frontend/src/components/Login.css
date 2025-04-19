@@ -1,0 +1,96 @@
+/* Background container */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #7f5af0, #5d2ee8);
+    animation: fadeIn 1s ease-in;
+    overflow: hidden;
+  }
+  
+  /* Login Box with Glass Effect */
+  .login-box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    width: 24rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: slideIn 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Title */
+  .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Inputs */
+  .login-input {
+    width: 92%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .login-input:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Button */
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: #fff;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(135deg, #7b1fa2, #4a00e0);
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      background-color: #000;
+      opacity: 0;
+    }
+    to {
+      background: linear-gradient(135deg, #7f5af0, #5d2ee8);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
